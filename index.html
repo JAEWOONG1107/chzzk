@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>치지직 - CHZZK</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="headerLeft">
+                <div class="menu">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt"><g clip-path="url(#clip0_1128_3162)"><rect x="11" y="13" width="18" height="2" rx="1" fill="#DFE2EA"></rect><rect x="11" y="19" width="18" height="2" rx="1" fill="#DFE2EA"></rect><rect x="11" y="25" width="18" height="2" rx="1" fill="#DFE2EA"></rect></g><defs><clippath id="clip0_1128_3162"><rect width="40" height="40" rx="6" fill="white"></rect></clippath></defs></svg>
+                </div>
+                <div class="logo"><a href="#"><img src="img/logo.svg" alt="로고" height="26"></a></div>
+            </div>
+            <div class="search">
+                <input type="text" name="search" id="searchMain" placeholder="스트리머, 게임 영상 검색">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.9">
+                <path d="M15.8999 14.5L19.0862 17.7187" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="11.4302" cy="10.4819" r="5.35" stroke="white" stroke-width="1.8"></circle></g></svg>
+            </div>
+            <div class="headerRight">
+                <div class="ticket">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33 18V19C33.5523 19 34 18.5523 34 18H33ZM33 22H34C34 21.4477 33.5523 21 33 21V22ZM7 22V21C6.44772 21 6 21.4477 6 22H7ZM7 18H6C6 18.5523 6.44772 19 7 19V18ZM8.76842 11C7.23946 11 6 12.2395 6 13.7684H8C8 13.344 8.34403 13 8.76842 13V11ZM31.2316 11H8.76842V13H31.2316V11ZM34 13.7684C34 12.2395 32.7605 11 31.2316 11V13C31.656 13 32 13.344 32 13.7684H34ZM34 18V13.7684H32V18H34ZM32 20C32 19.4477 32.4477 19 33 19V17C31.3431 17 30 18.3431 30 20H32ZM33 21C32.4477 21 32 20.5523 32 20H30C30 21.6569 31.3431 23 33 23V21ZM34 26.2316V22H32V26.2316H34ZM31.2316 29C32.7605 29 34 27.7605 34 26.2316H32C32 26.656 31.656 27 31.2316 27V29ZM8.76842 29H31.2316V27H8.76842V29ZM6 26.2316C6 27.7605 7.23946 29 8.76842 29V27C8.34403 27 8 26.656 8 26.2316H6ZM6 22V26.2316H8V22H6ZM8 20C8 20.5523 7.55228 21 7 21V23C8.65685 23 10 21.6569 10 20H8ZM7 19C7.55228 19 8 19.4477 8 20H10C10 18.3431 8.65685 17 7 17V19ZM6 13.7684V18H8V13.7684H6Z" fill="currentColor"></path><rect width="2" height="4" rx="1" transform="matrix(1 0 0 -1 14 16)" fill="currentColor"></rect><rect width="2" height="4" rx="1" transform="matrix(1 0 0 -1 14 28)" fill="currentColor"></rect><rect width="2" height="4" rx="1" transform="matrix(1 0 0 -1 14 22)" fill="currentColor"></rect></svg>
+                </div>
+                <div class="login"><a href="#">로그인</a></div>
+            </div>
+        </header>
+
+        <!-- nav -->
+        <nav>
+            <ul class="topUl">
+                <li><a href="#"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt topSvg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.611 7.11908C23.8044 7.26028 23.9188 7.48537 23.9188 7.72486V17.9768C23.9188 18.2163 23.8044 18.4413 23.611 18.5826C23.4176 18.7238 23.1683 18.7641 22.9402 18.6911L18.5714 17.2931C18.2608 17.1937 18.05 16.9049 18.05 16.5788V9.12285C18.05 8.79669 18.2608 8.50793 18.5714 8.40853L22.9402 7.01054C23.1683 6.93755 23.4176 6.97788 23.611 7.11908ZM19.55 9.67032V16.0313L22.4188 16.9493V8.75232L19.55 9.67032Z" fill="currentColor"></path><path d="M9.9909 10.7164L13.5364 12.7634L9.9909 14.8103V10.7164ZM9.81362 14.9127C9.81369 14.9126 9.81376 14.9126 9.81384 14.9125L9.81362 14.9127Z" fill="currentColor" stroke="currentColor" stroke-width="1.18182"></path><rect x="3.65" y="4.88635" width="15.0455" height="15.8727" rx="3.97727" stroke="currentColor" stroke-width="1.5"></rect></svg>
+                <span class="span1">전체 라이브</span></a></li>
+                <li><a href="#"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt topSvg"><path d="M6.34333 17.8745C6.09832 17.5405 5.62895 17.4684 5.29497 17.7134C4.961 17.9584 4.88888 18.4278 5.13389 18.7618L6.34333 17.8745ZM21.25 13C21.25 17.5563 17.5564 21.25 13 21.25V22.75C18.3848 22.75 22.75 18.3848 22.75 13H21.25ZM13 4.75C17.5564 4.75 21.25 8.44365 21.25 13H22.75C22.75 7.61522 18.3848 3.25 13 3.25V4.75ZM13 21.25C10.2679 21.25 7.84594 19.9227 6.34333 17.8745L5.13389 18.7618C6.90691 21.1786 9.77001 22.75 13 22.75V21.25ZM5.67064 9.20878C7.04465 6.55834 9.81179 4.75 13 4.75V3.25C9.22979 3.25 5.96066 5.39017 4.33895 8.51842L5.67064 9.20878Z" fill="currentColor"></path><path d="M4.37274 5.31824V8.86369H7.9182" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path><path d="M15.8364 12.354C16.1515 12.5359 16.1515 12.9908 15.8363 13.1727L11.9363 15.4244C11.6212 15.6064 11.2273 15.3789 11.2273 15.015V10.5117C11.2273 10.1478 11.6212 9.92034 11.9363 10.1023L15.8364 12.354Z" fill="currentColor"></path></svg>
+                <span>다시보기</span></a></li>
+                <li><a href="#"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt topSvg"><rect x="5.04996" y="4.88635" width="6.5" height="6.5" rx="1.25" stroke="currentColor" stroke-width="1.5"></rect><rect x="14.8818" y="4.83635" width="6.6" height="6.6" rx="1.3" stroke="currentColor" stroke-width="1.4"></rect><rect x="14.9318" y="14.834" width="6.5" height="6.5" rx="1.25" stroke="currentColor" stroke-width="1.5"></rect><rect x="5.04996" y="14.834" width="6.5" height="6.5" rx="1.25" stroke="currentColor" stroke-width="1.5"></rect></svg>
+                <span>카테고리</span></a></li>
+            </ul>
+            <div class="favUl">
+                <span class="span2">&nbsp;&nbsp;&nbsp;즐겨찾기 채널</span>
+                <ul class="chn">
+                
+                </ul>
+            </div>
+            
+            <div class="contUl">
+                <span class="span3">&nbsp;&nbsp;&nbsp;추천 채널</span>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="navigator_icon_arrow__37j2I"><path d="M7 9L11 13L15 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <ul class="chn">
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="streamM">
+                            <div class="streamMImg">
+                                <img src="img/favicon.png" alt="">
+                            </div>
+                            <div class="streamContent">
+                                <p>닉네임</p>
+                                <p>카테고리</p>
+                            </div>
+                            <div class="viewers">
+                                <p> 0,000</p>
+                            </div>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <span class="span4">&nbsp;&nbsp;&nbsp;서비스 바로가기</span>
+                <ul class="linkIn">
+                    <li><a href="#"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt" stroke="#C9CEDC"><rect x="5.04996" y="4.51138" width="6.5" height="6.5" rx="1.25" stroke="currentColor" stroke-width="1.5"></rect><rect x="4.74997" y="14.2501" width="7.1" height="7.1" rx="3.55" stroke="currentColor" stroke-width="1.5"></rect><path d="M21.4169 10.9503H14.983C14.7933 10.9503 14.6727 10.7474 14.7634 10.5808L17.9804 4.67212C18.0751 4.49818 18.3248 4.49818 18.4195 4.67212L19.0782 4.31349L18.4195 4.67212L21.6365 10.5808C21.7272 10.7474 21.6066 10.9503 21.4169 10.9503Z" stroke="currentColor" stroke-width="1.5"></path><path d="M15.3999 14.8004L21.3994 20.8004" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path d="M21.3997 14.8003L15.4002 20.8002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                    <span class="span5">네이버 게임</span></a></li>
+                    <li><a href="#"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt"><g clip-path="url(#clip0_9131_73407)"><path d="M1.93173 10.0456C1.93173 8.72498 2.32016 7.94092 2.93169 7.45813C3.57996 6.94634 4.6187 6.65924 6.14537 6.65924H7.52264V13.432H6.14537C4.86785 13.432 3.81726 13.279 3.09515 12.8131C2.44483 12.3936 1.93173 11.6316 1.93173 10.0456Z" stroke="currentColor" stroke-width="1.5"></path></g><g clip-path="url(#clip1_9131_73407)"><path d="M24.0681 10.0453C24.0681 11.366 23.6797 12.15 23.0682 12.6328C22.4199 13.1446 21.3812 13.4317 19.8545 13.4317L18.4772 13.4317L18.4772 6.65897L19.8545 6.65897C21.132 6.65897 22.1826 6.81195 22.9047 7.27783C23.555 7.69739 24.0681 8.45932 24.0681 10.0453Z" stroke="currentColor" stroke-width="1.5"></path></g><path d="M10.0454 22.2857H15.9545" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path d="M18.6647 5.15915H7.33526C6.55298 5.15915 5.91882 5.79331 5.91882 6.57559V12.2403C5.91882 16.1511 9.08917 19.3215 13 19.3215C16.9108 19.3215 20.0812 16.1511 20.0812 12.2403V6.57559C20.0812 5.79331 19.447 5.15915 18.6647 5.15915Z" stroke="currentColor" stroke-width="1.5"></path><defs><clippath id="clip0_9131_73407"><rect width="4.72727" height="8.27273" fill="white" transform="translate(1.18173 5.90924)"></rect></clippath><clippath id="clip1_9131_73407"><rect width="4.72727" height="8.27273" fill="white" transform="translate(20.0909 5.90909)"></rect></clippath></defs></svg>
+                    <span>e스포츠</span></a></li>
+                    <li><a href="#"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt"><circle cx="13" cy="13" r="9" stroke="currentColor" stroke-width="1.5"></circle><path d="M8.89454 12.0289L10.117 15.1725C10.1469 15.2494 10.221 15.3 10.3034 15.3H15.6965C15.779 15.3 15.853 15.2494 15.8829 15.1725L17.1054 12.0289C17.1431 11.932 17.0261 11.849 16.9471 11.9167L15.125 13.4786L13.0839 10.3295C13.0445 10.2687 12.9555 10.2687 12.9161 10.3295L10.875 13.4786L9.05282 11.9167C8.97383 11.849 8.85684 11.932 8.89454 12.0289Z" fill="currentColor" stroke="currentColor" stroke-linecap="round"></path></svg>
+                    <span>오리지널 스포츠</span></a></li>
+                    <li><a href="#"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt"><path d="M6.54501 4.29541H18.545C19.7877 4.29541 20.795 5.30277 20.795 6.54541V13.5454C20.795 14.7881 19.7877 15.7954 18.545 15.7954H6.54501C5.30237 15.7954 4.29501 14.788 4.29501 13.5454V6.54541C4.29501 5.30277 5.30237 4.29541 6.54501 4.29541Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path><path d="M9 19.9998H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                    <span>PC 게임</span></a></li>
+                    <li><a href="#"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt"><path d="M16.2562 16.5455V14.7001H13.3917L16.5455 10.488H13.9899L14.7638 9.45456H12.2082L10.0961 12.2755H12.6517L9.45456 16.5455H16.2562Z" fill="currentColor"></path><rect x="4.29544" y="4.29529" width="17.4091" height="17.4091" rx="8.70455" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></rect></svg>
+                    <span class="span6">치지직 라운지</span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- main -->
+        <main>
+            <div class="topAd">
+                <div class="adBox a1">
+                    <div class="adInner">
+                        <p>치지직 오픈베타를</p>
+                        <p>만나보세요.</p>
+                        <a href="#">공지 보러가기</a>
+                    </div>
+                    <img src="img/ad1.png" alt="광고 배너1">
+                </div>
+                <div class="adBox a1">
+                    <div class="adInner">
+                        <p>파트너/프로 등급</p>
+                        <p> 동시송출 가능.</p>
+                        <a href="#">공지 보러가기</a>
+                    </div>
+                    <img src="img/ad2.png" alt="광고 배너2">
+                </div>
+                <div class="adBox a1">
+                    <div class="adInner">
+                        <p>LCK 직관의 기회를</p>
+                        <p>잡아보세요</p>
+                        <a href="#">자세히 보기</a>
+                    </div>
+                    <img src="img/ad3.png" alt="광고 배너3">
+                </div>
+                <div class="adBox a2"></div>
+            </div>
+
+            <div class="streamBox">       
+                <img src="img/bg1.png" alt="mainThumbnail">
+                <p class="bRed"><span class="LiveB">LIVE</span> <span class="viewersM">1,111</span>명 시청</p>
+                <p class="bName">방송 제목 - 1</p>
+                <div class="bProfile">
+                    <img src="img/favicon.png" alt="">
+                </div>
+                <p class="mName">닉네임 - 1</p>
+                <p class="mCategory"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="#00FFA3E6" class="recommend_live_icon_play__tgRrw"><path fill="#00FFA3E6" fill-rule="evenodd" d="M10 1.5a1 1 0 1 1 2 0v3h3.5a6.5 6.5 0 0 1 0 13h-9a6.5 6.5 0 1 1 0-13H10v-3Zm-.073 9.64c0 .192-.159.35-.35.35H7.83v1.748c0 .19-.16.35-.35.35h-.699c-.19 0-.35-.16-.35-.35V11.49H4.685a.353.353 0 0 1-.35-.35v-.698c0-.191.16-.35.35-.35h1.748V8.305c0-.19.158-.31.35-.31h.698c.19 0 .35.12.35.31v1.787h1.747c.191 0 .35.159.35.35v.699Zm4.893-1.747a.699.699 0 1 1 0-1.398.699.699 0 0 1 0 1.398Zm1.398 1.398a.699.699 0 1 0 1.398 0 .699.699 0 0 0-1.398 0Zm-2.097 2.097a.699.699 0 1 0 1.398 0 .699.699 0 0 0-1.398 0Zm-2.097-2.097a.699.699 0 1 0 1.398 0 .699.699 0 0 0-1.398 0Z" clip-rule="evenodd"></path></svg> <span class="bCategory">카테고리 - 1</span></p>
+                <ul class="streamThumbnail">
+                    <li class="active"><img src="img/bg1.png" alt="thnmb1"></li>
+                    <li><img src="img/bg2.png" alt="thnmb2"></li>
+                    <li><img src="img/bg3.png" alt="thnmb3"></li>
+                    <li><img src="img/bg4.png" alt="thnmb4"></li>
+                </ul>
+            </div>
+
+            <div class="streamer">
+                <span>치지직 파트너 스트리머를 소개합니다</span>
+                <a href="#">전체보기</a>
+            </div>
+            <div class="streamerImg">
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+                <a href="#">
+                    <div class="partner">
+                        <img src="img/favicon.png" alt="">
+                    </div>
+                    <p>닉네임 <i class="official"></i></p>
+                </a>
+            </div>
+            <div class="streamer">
+                <span>추천</span>
+                <a href="#">전체보기</a>
+            </div>
+            <div class="streaming">
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="streamWindow"><a href="#">
+                    <div class="streamC"></div>
+                    <div>
+                        <div class="streamP">
+                            <img src="img/favicon.png" alt="">
+                        </div>
+                        <div class="streamN">
+                            <p>방송 제목</p>
+                            <p>닉네임</p>
+                        </div>
+                    </div>
+                </a></div>
+            </div>
+            <div class="streamer">
+                <span>카테고리</span>
+                <a href="#">전체보기</a>
+            </div>
+            <div class="category">
+                <div class="categoryBox">
+                    <a href="#"><div class="categoryImg"></div>
+                    <p class="gName">Talk</p>
+                    <p class="gContent">시청자 · 라이브</p></a>
+                </div>
+                <div class="categoryBox">
+                    <a href="#"><div class="categoryImg"></div>
+                    <p class="gName">종합 게임</p>
+                    <p class="gContent">시청자 · 라이브</p></a>
+                </div>
+                <div class="categoryBox">
+                    <a href="#"><div class="categoryImg"></div>
+                    <p class="gName">에이펙스 레전드</p>
+                    <p class="gContent">시청자 · 라이브</p></a>
+                </div>
+                <div class="categoryBox">
+                    <a href="#"><div class="categoryImg"></div>
+                    <p class="gName">오버워치2</p>
+                    <p class="gContent">시청자 · 라이브</p></a>
+                </div>
+                <div class="categoryBox">
+                    <a href="#"><div class="categoryImg"></div>
+                    <p class="gName">리그 오브 레전드</p>
+                    <p class="gContent">시청자 · 라이브</p></a>
+                </div>
+                <div class="categoryBox">
+                    <a href="#"><div class="categoryImg"></div>
+                    <p class="gName">전략적 팀 전투</p>
+                    <p class="gContent">시청자 · 라이브</p></a>
+                </div>
+                <div class="categoryBox">
+                    <a href="#"><div class="categoryImg"></div>
+                    <p class="gName">발로란트</p>
+                    <p class="gContent">시청자 · 라이브</p></a>
+                </div>
+            </div>
+
+            <div class="streamer">
+                <span>최근소식</span>
+            </div>
+            <div class="news">
+                <div class="newsContent"><a href="#">
+                    <div class="newsStream">
+                        <div class="streamP"></div>
+                        <div class="newsConBox">
+                            <p class="newsName">닉네임</p>
+                            <p class="newsUpTime">업로드 시간</p>
+                        </div>
+                        <div class="newsConText">
+                            최근 소식 내용
+                        </div>
+                        <div class="newsBottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="23" fill="none"><rect width="45" height="21" x="1" y="1" stroke="#80899C" stroke-width="2" rx="10.5"/><path fill="#9da5b6" fill-rule="evenodd" d="M34.616 7.222a.937.937 0 0 1 1.252.012l3.69 3.379c.38.347.13.98-.384.976l-1.794-.015v3.677a.75.75 0 0 1-.75.75h-2.858a.75.75 0 0 1-.75-.75v-3.714l-1.805-.015a.562.562 0 0 1-.367-.984l3.766-3.316ZM17.569 16.478V7.801c0-.65-.505-1-1.03-1-.537 0-1.02.34-1.02 1v2.67H14.27V8.16c0-.71-.402-1.02-1-1.02-.587 0-1 .3-1 1.02V9.74H10.52V8.162c0-.711-.402-1.02-.99-1.02-.597 0-1.03.298-1.03 1.02v6.327c0 1.134.299 1.546 1.494 1.546h4.277v-3.803h1.247v4.246h2.05Zm-5.297-2.143h-1.464c-.237 0-.288-.031-.288-.268v-2.649h1.752v2.917Zm15.52-6.328c0 .423-.247.866-.866.866h-7.193c-.618 0-.866-.443-.866-.866 0-.412.237-.865.866-.865h7.193c.629 0 .866.453.866.865Zm-.742 4.864c.619 0 .866-.402.866-.824 0-.412-.237-.825-.866-.825h-.7v-.917c0-.721-.423-1.05-1.041-1.05-.629 0-1.062.319-1.062 1.05v.918h-1.834v-.918c0-.721-.423-1.05-1.04-1.05-.63 0-1.062.319-1.062 1.05v.918h-.701c-.629 0-.866.412-.866.824 0 .422.247.824.866.824h7.44Zm1.103 2.536c0 .432-.258.865-.887.865h-7.873c-.629 0-.886-.432-.886-.865 0-.423.247-.876.886-.876h7.873c.64 0 .887.453.887.876Z" clip-rule="evenodd"/></svg> <span>0</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="news_icon_comment__FRP-Q"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="#80899C" stroke-width="1.4"></path><ellipse cx="7.11544" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="10" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="12.8847" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse></svg>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="currentColor" stroke-width="1.4"></path> <span>0</span>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="newsContent"><a href="#">
+                    <div class="newsStream">
+                        <div class="streamP"></div>
+                        <div class="newsConBox">
+                            <p class="newsName">닉네임</p>
+                            <p class="newsUpTime">업로드 시간</p>
+                        </div>
+                        <div class="newsConText">
+                            최근 소식 내용
+                        </div>
+                        <div class="newsBottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="23" fill="none"><rect width="45" height="21" x="1" y="1" stroke="#80899C" stroke-width="2" rx="10.5"/><path fill="#9da5b6" fill-rule="evenodd" d="M34.616 7.222a.937.937 0 0 1 1.252.012l3.69 3.379c.38.347.13.98-.384.976l-1.794-.015v3.677a.75.75 0 0 1-.75.75h-2.858a.75.75 0 0 1-.75-.75v-3.714l-1.805-.015a.562.562 0 0 1-.367-.984l3.766-3.316ZM17.569 16.478V7.801c0-.65-.505-1-1.03-1-.537 0-1.02.34-1.02 1v2.67H14.27V8.16c0-.71-.402-1.02-1-1.02-.587 0-1 .3-1 1.02V9.74H10.52V8.162c0-.711-.402-1.02-.99-1.02-.597 0-1.03.298-1.03 1.02v6.327c0 1.134.299 1.546 1.494 1.546h4.277v-3.803h1.247v4.246h2.05Zm-5.297-2.143h-1.464c-.237 0-.288-.031-.288-.268v-2.649h1.752v2.917Zm15.52-6.328c0 .423-.247.866-.866.866h-7.193c-.618 0-.866-.443-.866-.866 0-.412.237-.865.866-.865h7.193c.629 0 .866.453.866.865Zm-.742 4.864c.619 0 .866-.402.866-.824 0-.412-.237-.825-.866-.825h-.7v-.917c0-.721-.423-1.05-1.041-1.05-.629 0-1.062.319-1.062 1.05v.918h-1.834v-.918c0-.721-.423-1.05-1.04-1.05-.63 0-1.062.319-1.062 1.05v.918h-.701c-.629 0-.866.412-.866.824 0 .422.247.824.866.824h7.44Zm1.103 2.536c0 .432-.258.865-.887.865h-7.873c-.629 0-.886-.432-.886-.865 0-.423.247-.876.886-.876h7.873c.64 0 .887.453.887.876Z" clip-rule="evenodd"/></svg> <span>0</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="news_icon_comment__FRP-Q"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="#80899C" stroke-width="1.4"></path><ellipse cx="7.11544" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="10" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="12.8847" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse></svg>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="currentColor" stroke-width="1.4"></path> <span>0</span>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="newsContent"><a href="#">
+                    <div class="newsStream">
+                        <div class="streamP"></div>
+                        <div class="newsConBox">
+                            <p class="newsName">닉네임</p>
+                            <p class="newsUpTime">업로드 시간</p>
+                        </div>
+                        <div class="newsConText">
+                            최근 소식 내용
+                        </div>
+                        <div class="newsBottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="23" fill="none"><rect width="45" height="21" x="1" y="1" stroke="#80899C" stroke-width="2" rx="10.5"/><path fill="#9da5b6" fill-rule="evenodd" d="M34.616 7.222a.937.937 0 0 1 1.252.012l3.69 3.379c.38.347.13.98-.384.976l-1.794-.015v3.677a.75.75 0 0 1-.75.75h-2.858a.75.75 0 0 1-.75-.75v-3.714l-1.805-.015a.562.562 0 0 1-.367-.984l3.766-3.316ZM17.569 16.478V7.801c0-.65-.505-1-1.03-1-.537 0-1.02.34-1.02 1v2.67H14.27V8.16c0-.71-.402-1.02-1-1.02-.587 0-1 .3-1 1.02V9.74H10.52V8.162c0-.711-.402-1.02-.99-1.02-.597 0-1.03.298-1.03 1.02v6.327c0 1.134.299 1.546 1.494 1.546h4.277v-3.803h1.247v4.246h2.05Zm-5.297-2.143h-1.464c-.237 0-.288-.031-.288-.268v-2.649h1.752v2.917Zm15.52-6.328c0 .423-.247.866-.866.866h-7.193c-.618 0-.866-.443-.866-.866 0-.412.237-.865.866-.865h7.193c.629 0 .866.453.866.865Zm-.742 4.864c.619 0 .866-.402.866-.824 0-.412-.237-.825-.866-.825h-.7v-.917c0-.721-.423-1.05-1.041-1.05-.629 0-1.062.319-1.062 1.05v.918h-1.834v-.918c0-.721-.423-1.05-1.04-1.05-.63 0-1.062.319-1.062 1.05v.918h-.701c-.629 0-.866.412-.866.824 0 .422.247.824.866.824h7.44Zm1.103 2.536c0 .432-.258.865-.887.865h-7.873c-.629 0-.886-.432-.886-.865 0-.423.247-.876.886-.876h7.873c.64 0 .887.453.887.876Z" clip-rule="evenodd"/></svg> <span>0</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="news_icon_comment__FRP-Q"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="#80899C" stroke-width="1.4"></path><ellipse cx="7.11544" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="10" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="12.8847" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse></svg>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="currentColor" stroke-width="1.4"></path> <span>0</span>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="newsContent"><a href="#">
+                    <div class="newsStream">
+                        <div class="streamP"></div>
+                        <div class="newsConBox">
+                            <p class="newsName">닉네임</p>
+                            <p class="newsUpTime">업로드 시간</p>
+                        </div>
+                        <div class="newsConText">
+                            최근 소식 내용
+                        </div>
+                        <div class="newsBottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="23" fill="none"><rect width="45" height="21" x="1" y="1" stroke="#80899C" stroke-width="2" rx="10.5"/><path fill="#9da5b6" fill-rule="evenodd" d="M34.616 7.222a.937.937 0 0 1 1.252.012l3.69 3.379c.38.347.13.98-.384.976l-1.794-.015v3.677a.75.75 0 0 1-.75.75h-2.858a.75.75 0 0 1-.75-.75v-3.714l-1.805-.015a.562.562 0 0 1-.367-.984l3.766-3.316ZM17.569 16.478V7.801c0-.65-.505-1-1.03-1-.537 0-1.02.34-1.02 1v2.67H14.27V8.16c0-.71-.402-1.02-1-1.02-.587 0-1 .3-1 1.02V9.74H10.52V8.162c0-.711-.402-1.02-.99-1.02-.597 0-1.03.298-1.03 1.02v6.327c0 1.134.299 1.546 1.494 1.546h4.277v-3.803h1.247v4.246h2.05Zm-5.297-2.143h-1.464c-.237 0-.288-.031-.288-.268v-2.649h1.752v2.917Zm15.52-6.328c0 .423-.247.866-.866.866h-7.193c-.618 0-.866-.443-.866-.866 0-.412.237-.865.866-.865h7.193c.629 0 .866.453.866.865Zm-.742 4.864c.619 0 .866-.402.866-.824 0-.412-.237-.825-.866-.825h-.7v-.917c0-.721-.423-1.05-1.041-1.05-.629 0-1.062.319-1.062 1.05v.918h-1.834v-.918c0-.721-.423-1.05-1.04-1.05-.63 0-1.062.319-1.062 1.05v.918h-.701c-.629 0-.866.412-.866.824 0 .422.247.824.866.824h7.44Zm1.103 2.536c0 .432-.258.865-.887.865h-7.873c-.629 0-.886-.432-.886-.865 0-.423.247-.876.886-.876h7.873c.64 0 .887.453.887.876Z" clip-rule="evenodd"/></svg> <span>0</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="news_icon_comment__FRP-Q"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="#80899C" stroke-width="1.4"></path><ellipse cx="7.11544" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="10" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="12.8847" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse></svg>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="currentColor" stroke-width="1.4"></path> <span>0</span>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="newsContent"><a href="#">
+                    <div class="newsStream">
+                        <div class="streamP"></div>
+                        <div class="newsConBox">
+                            <p class="newsName">닉네임</p>
+                            <p class="newsUpTime">업로드 시간</p>
+                        </div>
+                        <div class="newsConText">
+                            최근 소식 내용
+                        </div>
+                        <div class="newsBottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="23" fill="none"><rect width="45" height="21" x="1" y="1" stroke="#80899C" stroke-width="2" rx="10.5"/><path fill="#9da5b6" fill-rule="evenodd" d="M34.616 7.222a.937.937 0 0 1 1.252.012l3.69 3.379c.38.347.13.98-.384.976l-1.794-.015v3.677a.75.75 0 0 1-.75.75h-2.858a.75.75 0 0 1-.75-.75v-3.714l-1.805-.015a.562.562 0 0 1-.367-.984l3.766-3.316ZM17.569 16.478V7.801c0-.65-.505-1-1.03-1-.537 0-1.02.34-1.02 1v2.67H14.27V8.16c0-.71-.402-1.02-1-1.02-.587 0-1 .3-1 1.02V9.74H10.52V8.162c0-.711-.402-1.02-.99-1.02-.597 0-1.03.298-1.03 1.02v6.327c0 1.134.299 1.546 1.494 1.546h4.277v-3.803h1.247v4.246h2.05Zm-5.297-2.143h-1.464c-.237 0-.288-.031-.288-.268v-2.649h1.752v2.917Zm15.52-6.328c0 .423-.247.866-.866.866h-7.193c-.618 0-.866-.443-.866-.866 0-.412.237-.865.866-.865h7.193c.629 0 .866.453.866.865Zm-.742 4.864c.619 0 .866-.402.866-.824 0-.412-.237-.825-.866-.825h-.7v-.917c0-.721-.423-1.05-1.041-1.05-.629 0-1.062.319-1.062 1.05v.918h-1.834v-.918c0-.721-.423-1.05-1.04-1.05-.63 0-1.062.319-1.062 1.05v.918h-.701c-.629 0-.866.412-.866.824 0 .422.247.824.866.824h7.44Zm1.103 2.536c0 .432-.258.865-.887.865h-7.873c-.629 0-.886-.432-.886-.865 0-.423.247-.876.886-.876h7.873c.64 0 .887.453.887.876Z" clip-rule="evenodd"/></svg> <span>0</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="news_icon_comment__FRP-Q"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="#80899C" stroke-width="1.4"></path><ellipse cx="7.11544" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="10" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse><ellipse cx="12.8847" cy="9.90783" rx="0.961538" ry="0.961538" fill="#80899C"></ellipse></svg>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9097 15.2606V17.2338C11.9097 17.5578 12.2671 17.7155 12.5042 17.5037C13.5598 16.5607 15.689 14.6543 16.5403 13.8649C17.6861 12.8021 18.3899 11.2393 18.3298 9.5076C18.2257 6.49823 15.7862 4.13867 12.8767 4.13867L7.20376 4.13883C4.30433 4.13883 1.80933 6.4451 1.6728 9.44299C1.52716 12.6437 3.98836 15.2606 7.04861 15.2606H11.9097Z" stroke="currentColor" stroke-width="1.4"></path>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </a></div>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">네이버 이용약관</a></li>
+                <li><a href="#">네이버 게임 커뮤니티 가이드</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">치지직 라운지</a></li>
+                <li><a href="#">네이버 게임 고객센터</a></li>
+                <li><a href="#">&copy; NAVER Corp.</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
